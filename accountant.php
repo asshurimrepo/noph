@@ -35,6 +35,8 @@ include('includes/header.php');
                   <tbody>
                     <?php
                         
+                        $status = ['Paid'=>'<span class="label label-success">Paid</span>', 'Unpaid'=>'<span class="label label-danger">Unpaid</span>'];
+
                          //Make Payment
                         if(isset($_GET['pay_id'])):
                            $sql = "UPDATE `noph`.`invoice` SET `status`='Paid' WHERE  `invoice_id`=".$_GET['pay_id'];
@@ -49,7 +51,6 @@ include('includes/header.php');
                         $result = mysql_query("SELECT * FROM invoice") or die(mysql_error());
                         // store the record of the "tblstudent" table into $row
 
-
              
                         while ($row = mysql_fetch_assoc($result)) {
                             // Print out the contents of the entry 
@@ -63,7 +64,7 @@ include('includes/header.php');
               echo "<td>". $row['description'] . "</td>";
               echo "<td>" . $row['amount'] . "</td>";
               echo "<td>" . $row['creation_timestamp'] . "</td>";
-              echo "<td>" . $row['status'] . ($row['status'] == 'Unpaid' ? ' | <a href="?pay_id='.$row['invoice_id'].'" class="btn btn-xs btn-primary">Take cash payment</a>' : '') . "</td>";
+              echo "<td>" . $status[$row['status']] . ($row['status'] == 'Unpaid' ? ' | <a href="?pay_id='.$row['invoice_id'].'" class="btn btn-xs btn-primary">Take cash payment</a>' : '') . "</td>";
               echo "<td>
               
               <a href='edit.php?id=$id'><span class='glyphicon glyphicon-icon-wrench' title='Edit'>Edit</span></a>|
