@@ -80,8 +80,7 @@ if(isset($_GET['update']))
   </div>
   
    <div class="form-group">
-    <form action="upload_file.php" method="post"
-    enctype="multipart/form-data">
+    <form action="upload_file.php" method="post" enctype="multipart/form-data">
     <label for="file">Your image:</label>
     <input type="file" required="" name="file_name" id="pic"><br>
     </form>

@@ -47,15 +47,15 @@ include('includes/config.php');
 			default:
 				$msg = 'No error code avaiable';
 		}
-		}elseif(empty($_FILES['file_name']['tmp_name']) || $_FILES['file_name']['tmp_name'] == 'none')
-		{
-			$msg = 'No file was uploaded..';
-		}else 
-		{	
-			$file = 'attached_'.rand(1,99999).'.jpg';
-			@move_uploaded_file($_FILES['file_name']['tmp_name'], 'uploads/'.$file);
+	}elseif(empty($_FILES['file_name']['tmp_name']) || $_FILES['file_name']['tmp_name'] == 'none')
+	{
+		$msg = 'No file was uploaded..';
+	}else 
+	{	
+		$file = 'attached_'.rand(1,99999).'.jpg';
+		@move_uploaded_file($_FILES['file_name']['tmp_name'], 'uploads/'.$file);
 
-		}
+	}
 
 			$insert=mysql_query("insert into prescription values(null,'$id','$pat_id',
 			'$history','$med','$dec','$report','$doc','$file','$lab')");
