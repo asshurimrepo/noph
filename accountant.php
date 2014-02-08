@@ -35,6 +35,12 @@ include('includes/header.php');
                   <tbody>
                     <?php
                         
+                         //Make Payment
+                        if(isset($_GET['pay_id'])):
+                           $sql = "UPDATE `noph`.`invoice` SET `status`='Paid' WHERE  `invoice_id`=".$_GET['pay_id'];
+                           mysql_query($sql);
+                        endif;  
+
                         //set up mysql connection
                         // mysql_connect("localhost", "root", "") or die(mysql_error());
                         //select database
@@ -43,11 +49,7 @@ include('includes/header.php');
                         $result = mysql_query("SELECT * FROM invoice") or die(mysql_error());
                         // store the record of the "tblstudent" table into $row
 
-                        //Make Payment
-                        if(isset($_GET['pay_id'])):
-                           $sql = "UPDATE `noph`.`invoice` SET `status`='Paid' WHERE  `invoice_id`=".$_GET['pay_id'];
-                           mysql_query($sql);
-                        endif;
+
              
                         while ($row = mysql_fetch_assoc($result)) {
                             // Print out the contents of the entry 
