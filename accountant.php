@@ -34,8 +34,9 @@ include('includes/header.php');
              
                   <tbody>
                     <?php
+                        
                         //set up mysql connection
-                        mysql_connect("localhost", "root", "") or die(mysql_error());
+                        // mysql_connect("localhost", "root", "") or die(mysql_error());
                         //select database
                         mysql_select_db("noph") or die(mysql_error());
                         // Retrieve all the data from the "tblstudent" table
@@ -54,7 +55,7 @@ include('includes/header.php');
               echo "<td>". $row['description'] . "</td>";
               echo "<td>" . $row['amount'] . "</td>";
               echo "<td>" . $row['creation_timestamp'] . "</td>";
-              echo "<td>" . $row['status'] . "</td>";
+              echo "<td>" . $row['status'] . ($row['status'] == 'Unpaid' ? ' | <a class="btn btn-xs btn-primary">Take cash payment</a>' : '') . "</td>";
               echo "<td>
               
               <a href='edit.php?id=$id'><span class='glyphicon glyphicon-icon-wrench' title='Edit'>Edit</span></a>|
