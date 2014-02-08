@@ -67,7 +67,7 @@ include('includes/config.php');
 <body>
 
 <div id="dialog-form" title="Create new vital signs">
-<form action="add_diagnostic.php" method="post">
+<form action="add_diagnostic.php" method="post" enctype="multipart/form-data">
 <fieldset class="myForm" style="margin:0 auto;">
 <div style="background-color:grey;color:white;text-align:center">ADD THE VITAL SIGNS</div>
 
@@ -212,7 +212,7 @@ if(isset($_GET['error']))
                         <td>".$row['medication']."</td>
                         <td>".$row['discription']."</td>
                         <td>".$row['report_type']."</td>
-                        <td>".$row['document_type']."</td>
+                        <td>".( file_exists('uploads/'.$row['file_name']) ? '<img src="uploads/'.$row['file_name'].'" width="100%" />' : 'N/A' )."</td>
                         <td>".$row['lab_discription']."</td>
                           <td><a href='edit_diagnostic.php?id=$id'>
                           <span class='glyphicon glyphicon-user' title='Edit'>Edit</span></a>

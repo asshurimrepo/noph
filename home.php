@@ -52,9 +52,9 @@ include('includes/header.php');
                   <tbody>
                     <?php
                         //set up mysql connection
-                        mysql_connect("localhost", "root", "") or die(mysql_error());
+                        // mysql_connect("localhost", "root", "mysql") or die(mysql_error());
                         //select database
-                        mysql_select_db("noph") or die(mysql_error());
+                        // mysql_select_db("noph") or die(mysql_error());
                         // Retrieve all the data from the "tblstudent" table
                         $result = mysql_query("SELECT * FROM doctors") or die(mysql_error());
                         // store the record of the "tblstudent" table into $row

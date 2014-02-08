@@ -50,7 +50,7 @@ if(isset($_GET['update']))
 	}
 ?>
 
-<form action="do_edit.php" method="post">
+<form action="do_edit.php" method="post" enctype="multipart/form-data">
 <fieldset class="myForm" style="margin:0 auto;">
 <div style="background-color:grey;color:white;text-align:center">ADD THE VITAL SIGNS</div>
 
