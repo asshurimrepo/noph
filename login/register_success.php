@@ -1,0 +1,1 @@
+<link href="chumba/register.php">You've registered.

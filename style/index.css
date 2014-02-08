@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#FFF;
+	
+	}
+#header{
+	background-color:rgb(0, 85, 102);
+	height:70px;
+	/*margin-left:20px;
+	width:1320px;*/
+	color:white;
+	text-align: center;
+	padding-top:2px;
+}	
+#headlogin{
+	background-color:rgb(0, 85, 102);
+	height:20px;
+	/*margin-left:20px;
+	width:1320px;*/
+	
+	
+	}
+
+#wrapper
+{
+
+margin:0px auto;
+}	
+#container{
+	font-family: Tahoma;
+	
+	width:1280px;
+	margin-left: 40px;
+
+	}	
+#form3{
+	min-height:522px;
+	background-color:#F0F0F0;
+	
+	}
+#form3 input{
+height:30px;
+
+	}		
+
+#Lside{
+	min-height:515px;
+	width:170px;
+	background:#FFC;
+	border:#963;
+	float:left;
+	text-align:left;
+	font-size:12px; 
+	color:#00F;	
+	}
+	
+<!---- lside----->	
+	
+
+<!--body2{ margin:0px; }--->
+#leftMenu {
+	width: 15%;
+	min-width: 150px;
+}
+#leftMenu > details{
+    
+}
+#leftMenu > details > summary{
+	cursor:pointer;
+	background: #DFEFFF;
+	margin:6px;
+	padding:8px;
+}
+#leftMenu > details > summary:hover{
+	background: #EFEFEF;
+}
+#leftMenu > details > summary::-webkit-details-marker{
+	/*display: none;*/
+}
+#leftMenu > details > a{
+	display:block;
+	text-decoration: none;
+	color:#000;
+	font-size:13px;
+	margin:3px 6px 3px 18px;
+	padding: 4px;
+	background: #EFEFEF;
+	width:140px;
+}
+#leftMenu > details > a:hover{
+	background: #DFEFFF;
+	font-weight: bold;
+}
+#leftMenu > details > a:before{
+	content: "- ";
+}	
+<!----end  lside--->
+
+#sform{
+	margin-top:5px;	
+	min-height:410px;
+	width:746px;
+	float:left;
+	background:#FFC;
+	border-radius:5px;
+	margin-left:2px;
+	}	
+	
+	
+/* Form Group */
+.form-calculator{
+	padding: 20px;
+}
+
+.myForm {
+	width: 45%;
+	margin: 10px;
+}
+
+.form-group label{
+	font-weight: bold;
+	font-size: 11px;
+	display: inline-block;
+	width: 75px;
+}
+
+.form-group input{
+	width: 70%;
+}
+
+.btn-block{
+	width: 100%;
+	padding: 5px;
+}
+
+.waterBill{
+	font-size: 30px;
+	text-align: center;
+	color: red;
+}
+
+.put-right{
+	float: right;
+}
+
+.put-left{
+	float: left;
+}
+
+.marker .mark-info{
+	display: none;
+	padding: 10px;
+	background: #fafafa;
+	border: #ebebeb solid 1px;
+	border-radius: 5px;
+	max-width: 200px;
+
+}
+
+.marker:hover .mark-info{
+	display: inherit;
+}
+/* End Form Group */
+
+	
+
+#form2{
+	width:920px;
+	height:482px;
+	background:#CCC;
+	float:right;
+	}
+#form2 td 
+{
+text-align:center;
+font-family:century;
+}
+#form2 th
+{
+text-align:center;
+font-family:Tahoma;
+}
+#results th
+{
+text-align:center;
+font-family:Tahoma;
+background-color:green;
+}
+#form1{
+	height:482px;
+	width:900px;
+	background:#CCC;
+	margin-left:200px;
+	}	
+
+#menu{
+	background:#99F;
+	height:150px;
+	width:1100px;
+	}
+
+textarea#styled {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+/*#head{
+	font-size:50px;
+	height:50px;
+	width:1100px;
+	color:#FFF;
+	padding-top:40px;
+	text-align:center;
+	border-radius:2px;
+	text-align:center;
+	position:relative;
+	}	*/
+	
+#but{
+	text-align:right;
+	font-size:14px;
+	border-radius:5px;
+	background-color:#FFC;
+	height:28px;
+	
+	}
+li
+{
+float:right;
+}	
+	
+#but 
+{
+margin-left:995px;	
+text-align:center;
+font-family:Tahoma;
+
+}
+#but a:hover
+{
+font-size:15px;
+background-color:#CFC;
+}
+	
+#title{
+	margin-left:300; 
+	margin-right:300;
+	
+	}
+					
+	
+#images{
+	margin-top:5px;
+	height:250px;
+	width:200px;
+	background:#FFC;
+	border:#963;
+	float:left;
+	border-radius:5px;
+	text-align:center;
+	font-size:20px; 	
+	}	
+
+legend {
+display: block;
+-webkit-padding-start: 2px;
+-webkit-padding-end: 2px;
+border: none;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+}
+
+
+	
+#footer{
+	background:#99F;
+	height:50px;
+	/*width:1320px;
+	margin-left:20px;*/
+	text-align:center;
+	padding-bottom:5px;
+	padding-top:8px;
+	}
+#search 
+{
+text-align: left;
+}
+#search th
+{
+background-color:#CEFFFF;
+}
+#record1
+{
+font-family: century;
+
+}
+#record
+{
+text-align:center;
+}
+#form3 td 
+{
+
+
+	font-size:13px;
+}
+#form3 th
+{
+
+	
+	background-color: lightgrey;
+}		
